@@ -118,3 +118,142 @@ Require stack:
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
+[debug] [2024-04-15T11:56:44.958Z] ----------------------------------------------------------------------
+[debug] [2024-04-15T11:56:44.966Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SADIKI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-04-15T11:56:44.967Z] CLI Version:   13.7.1
+[debug] [2024-04-15T11:56:44.971Z] Platform:      win32
+[debug] [2024-04-15T11:56:44.972Z] Node Version:  v20.11.0
+[debug] [2024-04-15T11:56:44.972Z] Time:          Mon Apr 15 2024 13:56:44 GMT+0200 (South Africa Standard Time)
+[debug] [2024-04-15T11:56:44.972Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-15T11:56:45.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-15T11:56:45.281Z] > authorizing via signed-in user (dakalosadiki98@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2024-04-15T11:56:45.309Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-15T11:56:45.309Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2024-04-15T11:56:45.312Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-add08. This may result in unexpected behavior. 
+[debug] [2024-04-15T11:56:45.328Z] [hub] writing locator at C:\Users\SADIKI\AppData\Local\Temp\hub-clone-add08.json
+[debug] [2024-04-15T11:56:45.420Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-15T11:56:45.420Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-15T11:56:45.424Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2024-04-15T11:56:45.437Z] defaultcredentials: writing to file C:\Users\SADIKI\AppData\Roaming\firebase\dakalosadiki98_gmail_com_application_default_credentials.json
+[debug] [2024-04-15T11:56:45.450Z] Setting GAC to C:\Users\SADIKI\AppData\Roaming\firebase\dakalosadiki98_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\SADIKI\\AppData\\Roaming\\firebase\\dakalosadiki98_gmail_com_application_default_credentials.json"}}
+[debug] [2024-04-15T11:56:45.457Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-add08/adminSdkConfig [none]
+[debug] [2024-04-15T11:56:46.130Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-add08/adminSdkConfig 200
+[debug] [2024-04-15T11:56:46.131Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-add08/adminSdkConfig {"projectId":"clone-add08","storageBucket":"clone-add08.appspot.com"}
+[debug] [2024-04-15T11:56:46.150Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-add08/sites 
+[debug] [2024-04-15T11:56:48.199Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-add08/sites 200
+[debug] [2024-04-15T11:56:48.200Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-add08/sites {"sites":[{"name":"projects/clone-add08/sites/clone-add08","defaultUrl":"https://clone-add08.web.app","appId":"1:226322814976:web:39e13a164b90a965d9e0e5","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-15T11:56:48.201Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-add08/webApps/1:226322814976:web:39e13a164b90a965d9e0e5/config [none]
+[debug] [2024-04-15T11:56:48.993Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-add08/webApps/1:226322814976:web:39e13a164b90a965d9e0e5/config 200
+[debug] [2024-04-15T11:56:48.997Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-add08/webApps/1:226322814976:web:39e13a164b90a965d9e0e5/config {"projectId":"clone-add08","appId":"1:226322814976:web:39e13a164b90a965d9e0e5","storageBucket":"clone-add08.appspot.com","apiKey":"AIzaSyCjm4PhcA2LuK7HcEfIVdbaryP_kJrjogg","authDomain":"clone-add08.firebaseapp.com","messagingSenderId":"226322814976","measurementId":"G-NJ2TLMCQPP"}
+[debug] [2024-04-15T11:56:49.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-add08 [none]
+[debug] [2024-04-15T11:56:49.429Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-add08 200
+[debug] [2024-04-15T11:56:49.430Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-add08 {"projectId":"clone-add08","projectNumber":"226322814976","displayName":"Amazon-clone","name":"projects/clone-add08","resources":{"hostingSite":"clone-add08"},"state":"ACTIVE","etag":"1_780e3d34-3f67-4269-a25e-7a3a8f8c2a06"}
+[info] i  hosting[clone-add08]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-add08]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-04-15T11:56:49.744Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-04-15T11:56:49.745Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-04-15T11:56:49.746Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\SADIKI\\.cache\\firebase\\emulators\\ui-v1.11.8\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\SADIKI\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.8\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-04-15T11:56:50.825Z] Web / API server started at 127.0.0.1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4001\n"}}
+[debug] [2024-04-15T11:56:50.825Z] Web / API server started at ::1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4001\n"}}
+[info] i  functions: Watching "C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\SADIKI\\OneDrive\\Desktop\\zaio projects\\amazon-apps\\functions\" for Cloud Functions..."}}
+[debug] [2024-04-15T11:56:50.866Z] Validating nodejs source
+[debug] [2024-04-15T11:56:56.363Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^15.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-04-15T11:56:56.365Z] Building nodejs source
+[debug] [2024-04-15T11:56:56.366Z] Failed to find version of module node: reached end of search path C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-15T11:56:56.370Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-15T11:56:56.394Z] Found firebase-functions binary at 'C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8859
+
+[error] Error: Cannot find module 'firebase-function'
+Require stack:
+- C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions\index.js
+- C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions\index.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\SADIKI\\OneDrive\\Desktop\\zaio projects\\amazon-apps\\functions\\index.js',
+    'C:\\Users\\SADIKI\\OneDrive\\Desktop\\zaio projects\\amazon-apps\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js',
+    'C:\\Users\\SADIKI\\OneDrive\\Desktop\\zaio projects\\amazon-apps\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js'
+  ]
+}
+
+[debug] [2024-04-15T11:56:57.787Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'firebase-function'
+Require stack:
+- C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions\index.js
+- C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\SADIKI\OneDrive\Desktop\zaio projects\amazon-apps\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4001/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4001/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [15/Apr/2024:11:57:41 +0000] "GET / HTTP/1.1" 200 644 "http://127.0.0.1:4001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [15/Apr/2024:11:57:41 +0000] \"GET / HTTP/1.1\" 200 644 \"http://127.0.0.1:4001/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [15/Apr/2024:11:57:41 +0000] "GET /static/css/main.17775658.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [15/Apr/2024:11:57:41 +0000] \"GET /static/css/main.17775658.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [15/Apr/2024:11:57:42 +0000] "GET /static/js/main.60864011.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [15/Apr/2024:11:57:42 +0000] \"GET /static/js/main.60864011.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [15/Apr/2024:11:57:43 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://127.0.0.1:5000/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [15/Apr/2024:11:57:43 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://127.0.0.1:5000/home\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [15/Apr/2024:11:57:44 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://127.0.0.1:5000/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [15/Apr/2024:11:57:44 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://127.0.0.1:5000/home\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [15/Apr/2024:11:57:44 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5000/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [15/Apr/2024:11:57:44 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5000/home\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [15/Apr/2024:11:59:41 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [15/Apr/2024:11:59:41 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [15/Apr/2024:11:59:42 +0000] "GET /static/css/main.17775658.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [15/Apr/2024:11:59:42 +0000] \"GET /static/css/main.17775658.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [15/Apr/2024:11:59:42 +0000] "GET /static/js/main.60864011.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [15/Apr/2024:11:59:42 +0000] \"GET /static/js/main.60864011.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\""}}
